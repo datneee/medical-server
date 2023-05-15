@@ -1,0 +1,24 @@
+springdoc:
+  swagger-ui:
+    path: /api/swagger-ui
+
+mail:
+  username : ${MAIL_USERNAME}
+  password : ${MAIL_PASSWORD}
+storage:
+  location: upload-dir
+spring:
+  mail:
+    default-encoding: UTF-8
+    host: smtp.gmail.com
+    username: ${MAIL_USERNAME}
+    password: ${MAIL_PASSWORD}
+    port: 587
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+    protocol: smtp
+    test-connection: false
